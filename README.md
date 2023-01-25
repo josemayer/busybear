@@ -1,6 +1,6 @@
 # BusyBear 🐻
 
-I'm a Telegram bot that helps users with bus information. BusyBear uses the bus API to calculate the best stop point for the user to take, based on their location and the direction of the buses, in order to reduce the wait time in the points.
+I'm a Telegram bot that helps users with bus information in University of São Paulo (USP). BusyBear uses the campus' bus API to calculate the best stop point for the user to take, based on their location and the direction of the buses, in order to reduce the wait time in the points.
 
 ## Getting Started
 
