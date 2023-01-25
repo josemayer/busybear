@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  busybear:
+    build: .
+    environment:
+      - TELEGRAM_TOKEN
+    env_file:
+      - .env
+    volumes:
+      - .:/busybear
