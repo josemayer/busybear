@@ -1,6 +1,7 @@
 import os
 import requests
 import telegram
+import json
 import functions.geolocator
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 
@@ -12,13 +13,13 @@ def bus(update, context):
     if location:
         center = (location.latitude, location.longitude)
 
-        points = requests.get('https://uspdigital.usp.br/mobile/servicos/mapa/locais?campus=cidade-universitaria&categorias=transportes').json()
         candidate_points = []
-
-        for point in points:
-            coords_point = (float(point["latitude"]), float(point["longitude"]))
-            if functions.geolocator.is_within_radius(center, coords_point):
-                candidate_points.append(point["titulo"])
+        with open("data/points.json", "r") as points_file:
+            points = json.load(points_file)
+            for point in points:
+                coords_point = (float(point["lat"]), float(point["lng"]))
+                if functions.geolocator.is_within_radius(center, coords_point):
+                    candidate_points.append(point["titulo"])
 
         update.message.reply_text("Aqui estão os pontos até 250m próximos de você: {}".format(str(candidate_points)))
     else:
