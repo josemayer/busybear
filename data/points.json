@@ -346,5 +346,11 @@
 	"titulo": "Ponto de ônibus IPT",
 	"lat": "-23.55596913343068",
 	"lng": "-46.733740632735525"
+    },
+    {
+	"id": 60,
+	"titulo": "Ponto de ônibus Fundação Seade",
+	"lat": "-23.567014540146054",
+	"lng": "-46.727545016316235"
     }
 ]
