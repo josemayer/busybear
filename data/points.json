@@ -1,356 +1,356 @@
 [
-    {
-        "id": 0,
-        "titulo": "Ponto de ônibus metrô Butantã",
-        "lat": "-23.571859798091324",
-        "lng": "-46.70810545403674"
-    },
-    {
-        "id": 1,
-        "titulo": "Ponto de ônibus Afrânio Peixoto",
-        "lat": "-23.565857",
-        "lng": "-46.71093872883603"
-    },
-    {
-        "id": 2,
-        "titulo": "Ponto de ônibus Poli Metalúrgica",
-        "lat": "-23.552770336020142",
-        "lng": "-46.73182775174763"
-    },
-    {
-        "id": 3,
-        "titulo": "Terminal de ônibus USP",
-        "lat": "-23.55260049483675",
-        "lng": "-46.73190599999998"
-    },
-    {
-        "id": 4,
-        "titulo": "Ponto de ônibus Poli Mecânica",
-        "lat": "-23.55284428358123",
-        "lng": "-46.728699224536854"
-    },
-    {
-        "id": 5,
-        "titulo": "Ponto de ônibus portaria II",
-        "lat": "-23.552765",
-        "lng": "-46.728115"
-    },
-    {
-        "id": 6,
-        "titulo": "Ponto de ônibus Hidráulica",
-        "lat": "-23.556144687136413",
-        "lng": "-46.72630605158997"
-    },
-    {
-        "id": 7,
-        "titulo": "Ponto de Psicologia I",
-        "lat": "-23.556102922251803",
-        "lng": "-46.72587320573814"
-    },
-    {
-        "id": 8,
-        "titulo": "Ponto de ônibus Inova USP",
-        "lat": "-23.557799",
-        "lng": "-46.727256"
-    },
-    {
-        "id": 9,
-        "titulo": "Ponto de ônibus ECA",
-        "lat": "-23.557806338669685",
-        "lng": "-46.72689100000002"
-    },
-    {
-        "id": 10,
-        "titulo": "Ponto de ônibus Praça do Relógio",
-        "lat": "-23.555309",
-        "lng": "-46.724018"
-    },
-   {
-        "id": 12,
-        "titulo": "Ponto de ônibus Psicologia II",
-        "lat": "-23.55445390631474",
-        "lng": "-46.72471584921266"
-    },
-    {
-        "id": 13,
-        "titulo": "Ponto de ônibus - Acesso CPTM II",
-        "lat": "-23.560810236930195",
-        "lng": "-46.71340726524227"
-    },
-    {
-        "id": 14,
-        "titulo": "Ponto de ônibus - Acesso CPTM I",
-        "lat": "-23.56088184812314",
-        "lng": "-46.71287026239315"
-    },
-    {
-        "id": 15,
-        "titulo": "Ponto de ônibus Escola de Educação Física II",
-        "lat": "-23.56359108008862",
-        "lng": "-46.71271198568115"
-    },
-    {
-        "id": 16,
-        "titulo": "Ponto de ônibus Escola de Educação Física I",
-        "lat": "-23.56408636664587",
-        "lng": "-46.71307350528764"
-    },
-    {
-        "id": 17,
-        "titulo": "Ponto de ônibus Academia de Polícia",
-        "lat": "-23.565406",
-        "lng": "-46.713207"
-    },
-    {
-        "id": 18,
-        "titulo": "Ponto de ônibus Paços das Artes",
-        "lat": "-23.56358741982086",
-        "lng": "-46.71627271163942"
-    },
-    {
-        "id": 19,
-        "titulo": "Ponto de ônibus Educação",
-        "lat": "-23.563324342566197",
-        "lng": "-46.716020932540914"
-    },
-    {
-        "id": 20,
-        "titulo": "Ponto de ônibus CRUSP",
-        "lat": "-23.557564",
-        "lng": "-46.71952"
-    },
-    {
-        "id": 21,
-        "titulo": "Ponto de ônibus Cultura Japonesa",
-        "lat": "-23.562845",
-        "lng": "-46.719645"
-    },
-    {
-        "id": 22,
-        "titulo": "Ponto de ônibus Biblioteca Brasiliana",
-        "lat": "-23.562322",
-        "lng": "-46.723005"
-    },
-    {
-        "id": 23,
-        "titulo": "Ponto de ônibus Letras",
-        "lat": "-23.562053980816525",
-        "lng": "-46.72436072023777"
-    },
-    {
-        "id": 24,
-        "titulo": "Ponto de ônibus Geociência",
-        "lat": "-23.560654503361647",
-        "lng": "-46.7272004957008"
-    },
-    {
-        "id": 25,
-        "titulo": "Ponto de ônibus Reitoria/Bancos",
-        "lat": "-23.560101",
-        "lng": "-46.727346"
-    },
-    {
-        "id": 26,
-        "titulo": "Ponto de ônibus FEA",
-        "lat": "-23.558914",
-        "lng": "-46.729757"
-    },
-    {
-        "id": 27,
-        "titulo": "Ponto de ônibus FAU II",
-        "lat": "-23.559296",
-        "lng": "-46.729954"
-    },
-    {
-        "id": 28,
-        "titulo": "Ponto de ônibus Poli Biênio",
-        "lat": "-23.55780210219676",
-        "lng": "-46.73231655669554"
-    },
-    {
-        "id": 29,
-        "titulo": "Ponto de ônibus Poli Eletrotécnica",
-        "lat": "-23.557951",
-        "lng": "-46.732655"
-    },
-    {
-        "id": 31,
-        "titulo": "Ponto de ônibus Poli Civil",
-        "lat": "-23.555690616399634",
-        "lng": "-46.73349859259031"
-    },
-    {
-        "id": 32,
-        "titulo": "Ponto de ônibus Prefeitura I",
-        "lat": "-23.558922",
-        "lng": "-46.737732"
-    },
-    {
-        "id": 33,
-        "titulo": "Ponto de ônibus Clube dos Funcionários",
-        "lat": "-23.55947175018103",
-        "lng": "-46.73766695831296"
-    },
-    {
-        "id": 34,
-        "titulo": "Ponto de ônibus Física",
-        "lat": "-23.55971761348372",
-        "lng": "-46.73481308792111"
-    },
-    {
-        "id": 35,
-        "titulo": "Ponto de ônibus IAG",
-        "lat": "-23.559657377017103",
-        "lng": "-46.734485858421294"
-    },
-    {
-        "id": 36,
-        "titulo": "Ponto de ônibus Butantan",
-        "lat": "-23.564206",
-        "lng": "-46.722202"
-    },
-    {
-        "id": 37,
-        "titulo": "Ponto de ônibus Biblioteca Farmácia e Quimica",
-        "lat": "-23.566323889866226",
-        "lng": "-46.726846649012124"
-    },
-    {
-        "id": 38,
-        "titulo": "Ponto e ônibus História e Geografia",
-        "lat": "-23.56403809687164",
-        "lng": "-46.72261749810482"
-    },
-    {
-        "id": 39,
-        "titulo": "Ponto de ônibus Farmácia e Química",
-        "lat": "-23.56521099153753",
-        "lng": "-46.72480859998842"
-    },
-    {
-        "id": 40,
-        "titulo": "Ponto de ônibus CEPAM",
-        "lat": "-23.565960",
-        "lng": "-46.725485"
-    },
-    {
-        "id": 41,
-        "titulo": "Ponto de ônibus rua do Lago",
-        "lat": "-23.567544",
-        "lng": "-46.728975"
-    },
-    {
-        "id": 42,
-        "titulo": "Ponto de ônibus Biociências I",
-        "lat": "-23.566292620309373",
-        "lng": "-46.73024545767214"
-    },
-    {
-        "id": 43,
-        "titulo": "Ponto de ônibus Biociências II",
-        "lat": "-23.566305497914033",
-        "lng": "-46.73025599140169"
-    },
-    {
-        "id": 44,
-	"titulo": "Ponto de ônibus da Oceanografia",
-	"lat": "-23.560800500609634",
-	"lng": "-46.73087390396172"
-    },
-    {
-        "id": 45,
-        "titulo": "Ponto de ônibus FAU I",
-        "lat": "-23.56074798677059",
-        "lng": "-46.730838046627014"
-    },
-    {
-        "id": 46,
-        "titulo": "Ponto de ônibus  Parada Matemática",
-        "lat": "-23.568258",
-        "lng": "-46.731895"
-    },
-    {
-        "id": 47,
-        "titulo": "Ponto de ônibus acesso Vl. Indiana",
-        "lat": "-23.5685889937474",
-        "lng": "-46.73168236441802"
-    },
-    {
-        "id": 48,
-        "titulo": "Ponto de ônibus Portaria III",
-        "lat": "-23.56799110295657",
-        "lng": "-46.740454294477445"
-    },
-    {
-        "id": 49,
-        "titulo": "Ponto de ônibus Odontologia",
-        "lat": "-23.566667",
-        "lng": "-46.738388"
-    },
-    {
-        "id": 50,
-        "titulo": "Ponto de ônibus IPEN",
-        "lat": "-23.566047000000015",
-        "lng": "-46.73849528836058"
-    },
-    {
-        "id": 51,
-        "titulo": "Ponto de ônibus Biomédicas III",
-        "lat": "-23.564731",
-        "lng": "-46.739689"
-    },
-    {
-        "id": 52,
-        "titulo": "Ponto de ônibus da COPESP",
-        "lat": "-23.563895",
-        "lng": "-46.740715"
-    },
-    {
-        "id": 53,
-        "titulo": "Ponto de ônibus Hospital Universitário",
-        "lat": "-23.563808",
-        "lng": "-46.741402"
-    },
-    {
-        "id": 54,
-        "titulo": "Ponto de ônibus acesso São Remo",
-        "lat": "-23.559876248234254",
-        "lng": "-46.741879433204645"
-    },
-    {
-        "id": 55,
-        "titulo": "Ponto de ônibus MAE",
-        "lat": "-23.5597071205413",
-        "lng": "-46.74215722453687"
-    },
-    {
-        "id": 56,
-        "titulo": "Ponto de ônibus Prefeitura II",
-        "lat": "-23.559855",
-        "lng": "-46.739388"
-    },
-    {
-        "id": 57,
-	"titulo": "Ponto de ônibus Raia Olímpica",
-	"lat": "-23.55661213515697",
-	"long": "-46.72043598647769"
-    },
-    {
-        "id": 58,
-	"titulo": "Ponto de ônibus Praça do Relógio Solar",
-	"lat": "-23.560423243496423",
-	"lng": "-46.72028848569881"
-    },
-    {
-        "id": 59,
-	"titulo": "Ponto de ônibus IPT",
-	"lat": "-23.55596913343068",
-	"lng": "-46.733740632735525"
-    },
-    {
-	"id": 60,
-	"titulo": "Ponto de ônibus Fundação Seade",
-	"lat": "-23.567014540146054",
-	"lng": "-46.727545016316235"
-    }
+	{
+		"id": 0,
+		"titulo": "Ponto de ônibus metrô Butantã",
+		"lat": "-23.571859798091324",
+		"lng": "-46.70810545403674"
+	},
+	{
+		"id": 1,
+		"titulo": "Ponto de ônibus Afrânio Peixoto",
+		"lat": "-23.565857",
+		"lng": "-46.71093872883603"
+	},
+	{
+		"id": 2,
+		"titulo": "Ponto de ônibus Poli Metalúrgica",
+		"lat": "-23.552770336020142",
+		"lng": "-46.73182775174763"
+	},
+	{
+		"id": 3,
+		"titulo": "Terminal de ônibus USP",
+		"lat": "-23.55260049483675",
+		"lng": "-46.73190599999998"
+	},
+	{
+		"id": 4,
+		"titulo": "Ponto de ônibus Poli Mecânica",
+		"lat": "-23.55284428358123",
+		"lng": "-46.728699224536854"
+	},
+	{
+		"id": 5,
+		"titulo": "Ponto de ônibus portaria II",
+		"lat": "-23.552765",
+		"lng": "-46.728115"
+	},
+	{
+		"id": 6,
+		"titulo": "Ponto de ônibus Hidráulica",
+		"lat": "-23.556144687136413",
+		"lng": "-46.72630605158997"
+	},
+	{
+		"id": 7,
+		"titulo": "Ponto de Psicologia I",
+		"lat": "-23.556102922251803",
+		"lng": "-46.72587320573814"
+	},
+	{
+		"id": 8,
+		"titulo": "Ponto de ônibus Inova USP",
+		"lat": "-23.557799",
+		"lng": "-46.727256"
+	},
+	{
+		"id": 9,
+		"titulo": "Ponto de ônibus ECA",
+		"lat": "-23.557806338669685",
+		"lng": "-46.72689100000002"
+	},
+	{
+		"id": 10,
+		"titulo": "Ponto de ônibus Praça do Relógio",
+		"lat": "-23.555309",
+		"lng": "-46.724018"
+	},
+	{
+		"id": 12,
+		"titulo": "Ponto de ônibus Psicologia II",
+		"lat": "-23.55445390631474",
+		"lng": "-46.72471584921266"
+	},
+	{
+		"id": 13,
+		"titulo": "Ponto de ônibus - Acesso CPTM II",
+		"lat": "-23.560810236930195",
+		"lng": "-46.71340726524227"
+	},
+	{
+		"id": 14,
+		"titulo": "Ponto de ônibus - Acesso CPTM I",
+		"lat": "-23.56088184812314",
+		"lng": "-46.71287026239315"
+	},
+	{
+		"id": 15,
+		"titulo": "Ponto de ônibus Escola de Educação Física II",
+		"lat": "-23.56359108008862",
+		"lng": "-46.71271198568115"
+	},
+	{
+		"id": 16,
+		"titulo": "Ponto de ônibus Escola de Educação Física I",
+		"lat": "-23.56408636664587",
+		"lng": "-46.71307350528764"
+	},
+	{
+		"id": 17,
+		"titulo": "Ponto de ônibus Academia de Polícia",
+		"lat": "-23.565406",
+		"lng": "-46.713207"
+	},
+	{
+		"id": 18,
+		"titulo": "Ponto de ônibus Paços das Artes",
+		"lat": "-23.56358741982086",
+		"lng": "-46.71627271163942"
+	},
+	{
+		"id": 19,
+		"titulo": "Ponto de ônibus Educação",
+		"lat": "-23.563324342566197",
+		"lng": "-46.716020932540914"
+	},
+	{
+		"id": 20,
+		"titulo": "Ponto de ônibus CRUSP",
+		"lat": "-23.557564",
+		"lng": "-46.71952"
+	},
+	{
+		"id": 21,
+		"titulo": "Ponto de ônibus Cultura Japonesa",
+		"lat": "-23.562845",
+		"lng": "-46.719645"
+	},
+	{
+		"id": 22,
+		"titulo": "Ponto de ônibus Biblioteca Brasiliana",
+		"lat": "-23.562322",
+		"lng": "-46.723005"
+	},
+	{
+		"id": 23,
+		"titulo": "Ponto de ônibus Letras",
+		"lat": "-23.562053980816525",
+		"lng": "-46.72436072023777"
+	},
+	{
+		"id": 24,
+		"titulo": "Ponto de ônibus Geociência",
+		"lat": "-23.560654503361647",
+		"lng": "-46.7272004957008"
+	},
+	{
+		"id": 25,
+		"titulo": "Ponto de ônibus Reitoria/Bancos",
+		"lat": "-23.560101",
+		"lng": "-46.727346"
+	},
+	{
+		"id": 26,
+		"titulo": "Ponto de ônibus FEA",
+		"lat": "-23.558914",
+		"lng": "-46.729757"
+	},
+	{
+		"id": 27,
+		"titulo": "Ponto de ônibus FAU II",
+		"lat": "-23.559296",
+		"lng": "-46.729954"
+	},
+	{
+		"id": 28,
+		"titulo": "Ponto de ônibus Poli Biênio",
+		"lat": "-23.55780210219676",
+		"lng": "-46.73231655669554"
+	},
+	{
+		"id": 29,
+		"titulo": "Ponto de ônibus Poli Eletrotécnica",
+		"lat": "-23.557951",
+		"lng": "-46.732655"
+	},
+	{
+		"id": 31,
+		"titulo": "Ponto de ônibus Poli Civil",
+		"lat": "-23.555690616399634",
+		"lng": "-46.73349859259031"
+	},
+	{
+		"id": 32,
+		"titulo": "Ponto de ônibus Prefeitura I",
+		"lat": "-23.558922",
+		"lng": "-46.737732"
+	},
+	{
+		"id": 33,
+		"titulo": "Ponto de ônibus Clube dos Funcionários",
+		"lat": "-23.55947175018103",
+		"lng": "-46.73766695831296"
+	},
+	{
+		"id": 34,
+		"titulo": "Ponto de ônibus Física",
+		"lat": "-23.55971761348372",
+		"lng": "-46.73481308792111"
+	},
+	{
+		"id": 35,
+		"titulo": "Ponto de ônibus IAG",
+		"lat": "-23.559657377017103",
+		"lng": "-46.734485858421294"
+	},
+	{
+		"id": 36,
+		"titulo": "Ponto de ônibus Butantan",
+		"lat": "-23.564206",
+		"lng": "-46.722202"
+	},
+	{
+		"id": 37,
+		"titulo": "Ponto de ônibus Biblioteca Farmácia e Quimica",
+		"lat": "-23.566323889866226",
+		"lng": "-46.726846649012124"
+	},
+	{
+		"id": 38,
+		"titulo": "Ponto e ônibus História e Geografia",
+		"lat": "-23.56403809687164",
+		"lng": "-46.72261749810482"
+	},
+	{
+		"id": 39,
+		"titulo": "Ponto de ônibus Farmácia e Química",
+		"lat": "-23.56521099153753",
+		"lng": "-46.72480859998842"
+	},
+	{
+		"id": 40,
+		"titulo": "Ponto de ônibus CEPAM",
+		"lat": "-23.565960",
+		"lng": "-46.725485"
+	},
+	{
+		"id": 41,
+		"titulo": "Ponto de ônibus rua do Lago",
+		"lat": "-23.567544",
+		"lng": "-46.728975"
+	},
+	{
+		"id": 42,
+		"titulo": "Ponto de ônibus Biociências I",
+		"lat": "-23.566292620309373",
+		"lng": "-46.73024545767214"
+	},
+	{
+		"id": 43,
+		"titulo": "Ponto de ônibus Biociências II",
+		"lat": "-23.566305497914033",
+		"lng": "-46.73025599140169"
+	},
+	{
+		"id": 44,
+		"titulo": "Ponto de ônibus da Oceanografia",
+		"lat": "-23.560800500609634",
+		"lng": "-46.73087390396172"
+	},
+	{
+		"id": 45,
+		"titulo": "Ponto de ônibus FAU I",
+		"lat": "-23.56074798677059",
+		"lng": "-46.730838046627014"
+	},
+	{
+		"id": 46,
+		"titulo": "Ponto de ônibus  Parada Matemática",
+		"lat": "-23.568258",
+		"lng": "-46.731895"
+	},
+	{
+		"id": 47,
+		"titulo": "Ponto de ônibus acesso Vl. Indiana",
+		"lat": "-23.5685889937474",
+		"lng": "-46.73168236441802"
+	},
+	{
+		"id": 48,
+		"titulo": "Ponto de ônibus Portaria III",
+		"lat": "-23.56799110295657",
+		"lng": "-46.740454294477445"
+	},
+	{
+		"id": 49,
+		"titulo": "Ponto de ônibus Odontologia",
+		"lat": "-23.566667",
+		"lng": "-46.738388"
+	},
+	{
+		"id": 50,
+		"titulo": "Ponto de ônibus IPEN",
+		"lat": "-23.566047000000015",
+		"lng": "-46.73849528836058"
+	},
+	{
+		"id": 51,
+		"titulo": "Ponto de ônibus Biomédicas III",
+		"lat": "-23.564731",
+		"lng": "-46.739689"
+	},
+	{
+		"id": 52,
+		"titulo": "Ponto de ônibus da COPESP",
+		"lat": "-23.563895",
+		"lng": "-46.740715"
+	},
+	{
+		"id": 53,
+		"titulo": "Ponto de ônibus Hospital Universitário",
+		"lat": "-23.563808",
+		"lng": "-46.741402"
+	},
+	{
+		"id": 54,
+		"titulo": "Ponto de ônibus acesso São Remo",
+		"lat": "-23.559876248234254",
+		"lng": "-46.741879433204645"
+	},
+	{
+		"id": 55,
+		"titulo": "Ponto de ônibus MAE",
+		"lat": "-23.5597071205413",
+		"lng": "-46.74215722453687"
+	},
+	{
+		"id": 56,
+		"titulo": "Ponto de ônibus Prefeitura II",
+		"lat": "-23.559855",
+		"lng": "-46.739388"
+	},
+	{
+		"id": 57,
+		"titulo": "Ponto de ônibus Raia Olímpica",
+		"lat": "-23.55661213515697",
+		"long": "-46.72043598647769"
+	},
+	{
+		"id": 58,
+		"titulo": "Ponto de ônibus Praça do Relógio Solar",
+		"lat": "-23.560423243496423",
+		"lng": "-46.72028848569881"
+	},
+	{
+		"id": 59,
+		"titulo": "Ponto de ônibus IPT",
+		"lat": "-23.55596913343068",
+		"lng": "-46.733740632735525"
+	},
+	{
+		"id": 60,
+		"titulo": "Ponto de ônibus Fundação Seade",
+		"lat": "-23.567014540146054",
+		"lng": "-46.727545016316235"
+	}
 ]
