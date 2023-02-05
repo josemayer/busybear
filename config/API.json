@@ -1,0 +1,16 @@
+{
+	"buses": {
+		"api_URL": "https://olhovivo.sptrans.com.br/data/Posicao/Linha?codigoLinha=",
+		"ways_lc": {
+			"butanta": {
+				"8012": 34791,
+				"8022": 34853,
+				"8032": 35313
+			},
+			"p3": {
+				"8012": 2023,
+				"8022": 2085
+			}
+		}
+	}
+}
