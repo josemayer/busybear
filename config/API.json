@@ -1,6 +1,9 @@
 {
+	"auth": {
+		"api_URL": "http://api.olhovivo.sptrans.com.br/v2.1/Login/Autenticar?token="
+	},
 	"buses": {
-		"api_URL": "https://olhovivo.sptrans.com.br/data/Posicao/Linha?codigoLinha=",
+		"api_URL": "http://api.olhovivo.sptrans.com.br/v2.1/Posicao/Linha?codigoLinha=",
 		"ways_lc": {
 			"butanta": {
 				"8012": 34791,
