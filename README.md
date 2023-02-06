@@ -17,7 +17,8 @@ BusyBear uses the SPTrans API to calculate the best stop point for the user to t
 ## Usage
 
 - Send the command `/start` to the bot to get a greeting message.
-- Send the command `/bus` to the bot to get bus stop recommendations based on your location.
+- Send the command `/list_buses <way>` to the bot to get buses and its stops at moment.
+- Send your location to the bot to list the bus stops within a radius of 250 m.
 
 ## Built With
 
