@@ -2,6 +2,7 @@ import os
 import requests
 import telegram
 import json
+import functions.utils
 import functions.geolocator
 import functions.buses
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
@@ -15,12 +16,11 @@ def bus(update, context):
         center = (location.latitude, location.longitude)
 
         candidate_points = []
-        with open("data/points.json", "r") as points_file:
-            points = json.load(points_file)
-            for point in points:
-                coords_point = (float(point["lat"]), float(point["lng"]))
-                if functions.geolocator.is_within_radius(center, coords_point):
-                    candidate_points.append(point["titulo"])
+        points = functions.utils.get_json_data("data/points.json")
+        for point in points:
+            coords_point = (float(point["lat"]), float(point["lng"]))
+            if functions.geolocator.is_within_radius(center, coords_point):
+                candidate_points.append(point["titulo"])
 
         update.message.reply_text("Aqui estão os pontos até 250m próximos de você: {}".format(str(candidate_points)))
     else:
@@ -36,17 +36,20 @@ def list_buses(update, context):
     way = args[0]
     buses = functions.buses.retrieve_buses(way)
 
-    with open("data/points.json", "r") as points_file:
-        points = json.load(points_file)        
-        buses_and_points_str = "*Lista de ônibus nos pontos:* \n\n"
-        for bus in buses:
-            bus_location = (bus["lat"], bus["lng"])
-            closest_point = functions.geolocator.closest_point(bus_location, points)
+    points = functions.utils.get_json_data("data/points.json")
+    routes = functions.utils.get_json_data("data/routes.json")
+    buses_and_points_str = "*Lista de ônibus nos pontos:* \n\n"
+    for bus in buses:
+        bus_location = (bus["lat"], bus["lng"])
+        points_on_route = [point for point in points if point["id"] in routes[bus["bus_line"]][way]]
+        closest_point = functions.geolocator.closest_point(bus_location, points_on_route)
 
-            buses_and_points_str += f"- *{bus['bus_line']}*: {closest_point['titulo']}\n"
+        buses_and_points_str += f"- *{bus['bus_line']}*: {closest_point['titulo']}\n"
 
-        update.message.reply_text(buses_and_points_str, parse_mode=telegram.ParseMode.MARKDOWN)
-        
+    update.message.reply_text(buses_and_points_str, parse_mode=telegram.ParseMode.MARKDOWN)
+    
+
+
 
 
 def main():
