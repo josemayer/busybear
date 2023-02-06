@@ -30,13 +30,24 @@ def list_buses(update, context):
     args = context.args
     
     if len(args) < 1:
-        update.message.reply_text("Digite o sentido da linha (*p3* ou *butanta*)!")
+        update.message.reply_text("Digite o sentido da linha (*p3* ou *butanta*)!", parse_mode=telegram.ParseMode.MARKDOWN)
         return
 
     way = args[0]
     buses = functions.buses.retrieve_buses(way)
 
-    update.message.reply_text(json.dumps(buses, indent=4))
+    with open("data/points.json", "r") as points_file:
+        points = json.load(points_file)        
+        buses_and_points_str = "*Lista de ônibus nos pontos:* \n\n"
+        for bus in buses:
+            bus_location = (bus["lat"], bus["lng"])
+            closest_point = functions.geolocator.closest_point(bus_location, points)
+
+            buses_and_points_str += f"- *{bus['bus_line']}*: {closest_point['titulo']}\n"
+
+        update.message.reply_text(buses_and_points_str, parse_mode=telegram.ParseMode.MARKDOWN)
+        
+
 
 def main():
     telegram_token = os.environ.get("TELEGRAM_TOKEN")
