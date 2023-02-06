@@ -20,14 +20,16 @@ def haversine(center, location):
 def is_within_radius(center, location):
     return haversine(center, location) <= 250
 
-def closest_point(center, list_locations):
-    closest_location = list_locations[0]
+def closest_point(center, list_points):
+    closest_point = list_points[0]
+    closest_location = (float(closest_point["lat"]), float(closest_point["lng"]))
     closest_distance = haversine(center, closest_location)
     
-    for location in list_locations[1:]:
+    for point in list_points[1:]:
+        location = (float(point["lat"]), float(point["lng"]))
         distance = haversine(center, location)
         if distance < closest_distance:
             closest_distance = distance
-            closest_location = location
+            closest_point = point
     
-    return closest_location
+    return closest_point
