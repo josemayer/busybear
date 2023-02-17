@@ -1,6 +1,7 @@
 import json
 import os
 import requests
+import functions.utils
 
 def authenticate():
     with open("config/API.json", "r") as api_file:
@@ -57,3 +58,19 @@ def retrieve_buses(way):
 
         return buses
 
+def buses_at_points_with_way(way):
+    buses = retrieve_buses(way)
+    points = functions.utils.get_json_data("data/points.json")
+    routes = functions.utils.get_json_data("data/routes.json")
+    buses_and_points = []
+    for bus in buses:
+        bus_location = (bus["lat"], bus["lng"])
+        points_on_route = [point for point in points if point["id"] in routes[bus["bus_line"]][way]]
+        closest_point = functions.geolocator.closest_point(bus_location, points_on_route)
+        
+        buses_and_points.append({
+            "bus": bus,
+            "point": closest_point
+        })
+
+    return buses_and_points
