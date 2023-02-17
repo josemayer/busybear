@@ -5,7 +5,8 @@ import json
 import functions.utils
 import functions.geolocator
 import functions.buses
-from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
+from telegram import InlineKeyboardButton, InlineKeyboardMarkup
+from telegram.ext import Updater, CommandHandler, MessageHandler, CallbackQueryHandler, Filters
 
 def start(update, context):
     update.message.reply_text("Olá! Eu sou o BusyBear, o bot que encontra o melhor ponto de ônibus para pegar o seu circular na USP!")
@@ -22,9 +23,30 @@ def bus(update, context):
             if functions.geolocator.is_within_radius(center, coords_point):
                 candidate_points.append(point["titulo"])
 
-        update.message.reply_text("Aqui estão os pontos até 250m próximos de você: {}".format(str(candidate_points)))
+        if len(candidate_points) == 0:
+            update.message.reply_text("Não há pontos de ônibus próximos a você!")
+            return
+
+        user_data = {
+            "center": center,
+            "points": candidate_points
+        }
+        context.chat_data['user_data'] = user_data
+
+        menu = [[InlineKeyboardButton("Sentido Butantã", callback_data='butanta')],
+                [InlineKeyboardButton("Sentido Portaria 3", callback_data='p3')]]
+        reply_markup = InlineKeyboardMarkup(menu)
+        update.message.reply_text(f"Aqui estão os pontos até 250m próximos de você: {str(candidate_points)}", reply_markup=reply_markup)
     else:
         update.message.reply_text("Por favor, compartilhe sua localização comigo para obter os dados dos pontos de ônibus.")
+
+def rank_bus_stops(update, context):
+    query = update.callback_query
+    query.answer()
+    user_data = context.chat_data.get('user_data')
+    way = query.data
+
+    context.bot.send_message(chat_id=update.effective_chat.id, text=f"Você selecionou o sentido {way}, está em {user_data['center']} e os pontos candidatos são {str(user_data['points'])}")
 
 def list_buses(update, context):
     args = context.args
@@ -51,6 +73,7 @@ def main():
     dp.add_handler(CommandHandler("start", start))
     dp.add_handler(MessageHandler(Filters.location, bus))
     dp.add_handler(CommandHandler("list_buses", list_buses))
+    dp.add_handler(CallbackQueryHandler(rank_bus_stops, pass_chat_data=True))
 
     # Start the Bot
     updater.start_polling()
