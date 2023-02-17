@@ -21,7 +21,8 @@ def bus(update, context):
         for point in points:
             coords_point = (float(point["lat"]), float(point["lng"]))
             if functions.geolocator.is_within_radius(center, coords_point):
-                candidate_points.append(point["titulo"])
+                candidate_points.append(point)
+        candidate_points_names = [point["titulo"] for point in candidate_points]
 
         if len(candidate_points) == 0:
             update.message.reply_text("Não há pontos de ônibus próximos a você!")
@@ -29,14 +30,14 @@ def bus(update, context):
 
         user_data = {
             "center": center,
-            "points": candidate_points
+            "candidate_points": candidate_points
         }
         context.chat_data['user_data'] = user_data
 
         menu = [[InlineKeyboardButton("Sentido Butantã", callback_data='butanta')],
                 [InlineKeyboardButton("Sentido Portaria 3", callback_data='p3')]]
         reply_markup = InlineKeyboardMarkup(menu)
-        update.message.reply_text(f"Aqui estão os pontos até 250m próximos de você: {str(candidate_points)}", reply_markup=reply_markup)
+        update.message.reply_text(f"Aqui estão os pontos até 250m próximos de você: {str(candidate_points_names)}", reply_markup=reply_markup)
     else:
         update.message.reply_text("Por favor, compartilhe sua localização comigo para obter os dados dos pontos de ônibus.")
 
@@ -45,8 +46,26 @@ def rank_bus_stops(update, context):
     query.answer()
     user_data = context.chat_data.get('user_data')
     way = query.data
+    
+    buses_and_points = functions.buses.buses_at_points_with_way(way)
 
-    context.bot.send_message(chat_id=update.effective_chat.id, text=f"Você selecionou o sentido {way}, está em {user_data['center']} e os pontos candidatos são {str(user_data['points'])}")
+    if len(buses_and_points) == 0:
+        query.edit_message_text(text="Não há ônibus circulando no momento!")
+        return
+
+    ranked_points = functions.buses.rank_points(user_data["candidate_points"], user_data["center"], buses_and_points, way)
+    
+    if len(ranked_points) == 0:
+        query.edit_message_text(text="Não há nenhum ônibus indo para o seu destino nos pontos próximos :(")
+        return
+
+    ranked_points_str = f"*Pontos com o ônibus mais próximo*:\n\n"
+    for point in ranked_points:
+        distance = point["distance"]
+        points_str = "pontos" if distance > 1 else "ponto"
+        ranked_points_str += f"- *{point['point']['titulo']}*:\n*Circular {point['bus_and_point']['bus']['bus_line']}* há {str(point['distance'])} {points_str} de distância\n\n"
+
+    query.edit_message_text(text=ranked_points_str, parse_mode=telegram.ParseMode.MARKDOWN)
 
 def list_buses(update, context):
     args = context.args
