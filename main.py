@@ -61,15 +61,7 @@ def rank_bus_stops(update, context):
         query.edit_message_text(text="Não há nenhum ônibus indo para o seu destino nos pontos próximos :(")
         return
 
-    ranked_points_str = f"*Pontos com o ônibus mais próximo*:\n\n"
-    for (key, point) in ranked_points.items():
-        ranked_points_str += f"- *{point['titulo']}*:\n"
-        for bus in point["buses"]:
-            distance = bus["distance"]
-            points_str = "pontos" if distance > 1 else "ponto"
-            ranked_points_str += f"    - *{bus['bus_line']}*: há {str(distance)} {points_str} de distância.\n"
-        ranked_points_str += "\n"
-
+    ranked_points_str = functions.messages.format_buses_arrival(ranked_points, "buses")
     query.edit_message_text(text=ranked_points_str, parse_mode=telegram.ParseMode.MARKDOWN)
 
 def list_buses(update, context):
