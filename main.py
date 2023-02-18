@@ -74,9 +74,9 @@ def list_buses(update, context):
     way = args[0]
     buses_and_points = functions.buses.buses_at_points_with_way(way)
 
+    buses_and_points = [f"*{state['bus']['bus_line']}*: {state['point']['titulo']}" for state in buses_and_points]
     buses_and_points_str = "*Lista de ônibus nos pontos:* \n\n"
-    for state in buses_and_points:
-        buses_and_points_str += f"- *{state['bus']['bus_line']}*: {state['point']['titulo']}\n"
+    buses_and_points_str += functions.messages.format_bullets(buses_and_points)
 
     update.message.reply_text(buses_and_points_str, parse_mode=telegram.ParseMode.MARKDOWN)
 
