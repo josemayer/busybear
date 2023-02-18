@@ -39,7 +39,7 @@ def bus(update, context):
                 [InlineKeyboardButton("Sentido Portaria 3", callback_data='p3')]]
         reply_markup = InlineKeyboardMarkup(menu)
         points_str = functions.messages.format_bullets(candidate_points_names)
-        update.message.reply_text(f"Aqui estão os pontos até 250m próximos de você:\n{points_str}", reply_markup=reply_markup)
+        update.message.reply_text(f"Aqui estão os pontos até 250 m próximos de você:\n\n{points_str}\n\nQual o sentido do seu circular?", reply_markup=reply_markup)
     else:
         update.message.reply_text("Por favor, compartilhe sua localização comigo para obter os dados dos pontos de ônibus.")
 
