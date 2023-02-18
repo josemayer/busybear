@@ -14,17 +14,24 @@ BusyBear uses the SPTrans API to calculate the best stop point for the user to t
 
 4. Run the bot: `python main.py`
 
+### Deployment
+
+This bot has currently an early test version deployed and running at `@busybearbot` Telegram username. 
+
+[![Deployed](https://img.shields.io/badge/Deployed-green?style=flat-square&logo=telegram)](https://t.me/busybearbot)
+
+If you want to deploy your own instance of the bot, please follow the steps outlined in the [Getting Started](#getting-started) section. Once you have set up the environment variables with your own API keys, you can run the bot.
+
 ## Usage
 
 - Send the command `/start` to the bot to get a greeting message.
 - Send the command `/list_buses <way>` to the bot to get buses and its stops at moment.
-- Send your location to the bot to list the bus stops within a radius of 250 m.
+- Send your location to the bot to get distances from points within a 250 meter radius.
 
 ## Built With
 
 - [Python](https://www.python.org/) - Programming language used
 - [python-telegram-bot](https://github.com/python-telegram-bot/python-telegram-bot) - Library used for building Telegram bots in Python
-- [TomTom](https://www.tomtom.com) - Mapping and geolocation data API
 
 ## Contributing
 
