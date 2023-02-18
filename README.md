@@ -1,6 +1,6 @@
 # BusyBear 🐻
 
-[![Talk with the early test version!](https://img.shields.io/badge/Deployed-green?style=flat-square&logo=telegram)](https://t.me/busybearbot)
+[![Talk with the early test version!](https://img.shields.io/badge/Talk%20with%20me!-Telegram-2CA5E0.svg?logo=telegram&style=popout)](https://t.me/busybearbot)
 
 I'm a Telegram bot that helps users with bus information in University of São Paulo (USP). 
 
