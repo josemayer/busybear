@@ -79,29 +79,32 @@ def buses_at_points_with_way(way):
 def rank_points(candidate_points, localization, buses_and_points, way):
     routes = functions.utils.get_json_data("data/routes.json")
     
-    points_distance = []
+    points_distance = {}
     for point in candidate_points:
-        closest_bus_and_point = None
-        lowest_distance = math.inf
-        for bus in buses_and_points:
+       for bus in buses_and_points:
             bus_line = bus["bus"]["bus_line"]
             if point["id"] in routes[bus_line][way]:
                 point_position = routes[bus_line][way].index(point["id"])
                 bus_position = routes[bus_line][way].index(bus["point"]["id"])
                 # Check if the point id in the route has greater index than the point id of the bus
                 if point_position > bus_position:
+                    if not point["id"] in points_distance:
+                        points_distance[point["id"]] = {
+                            "titulo": point["titulo"],
+                            "lat": point["lat"],
+                            "lng": point["lng"],
+                            "buses": []
+                        }
+
                     # Calculate the points distance (difference of indexes) of the bus and the point
                     difference = point_position - bus_position
-                    # If the difference is lower than the lowest distance, update the lowest distance and the closest bus
-                    if difference < lowest_distance:
-                        lowest_distance = difference
-                        closest_bus_and_point = bus
-        
-        if closest_bus_and_point is not None:
-            points_distance.append({
-                "point": point,
-                "distance": lowest_distance,
-                "bus_and_point": closest_bus_and_point,
-            })
+                    # Add the difference to the list of buses of the point
+                    bus_info = {
+                        "bus_line": bus_line,
+                        "bus_code": bus["bus"]["bus_code"],
+                        "bus_point": bus["point"],
+                        "distance": difference
+                    }
+                    points_distance[point["id"]]["buses"].append(bus_info)
 
     return points_distance
