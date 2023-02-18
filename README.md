@@ -1,5 +1,7 @@
 # BusyBear 🐻
 
+[![Talk with the early test version!](https://img.shields.io/badge/Deployed-green?style=flat-square&logo=telegram)](https://t.me/busybearbot)
+
 I'm a Telegram bot that helps users with bus information in University of São Paulo (USP). 
 
 BusyBear uses the SPTrans API to calculate the best stop point for the user to take, based on their location and the direction of the buses, in order to reduce the wait time in the points.
@@ -16,9 +18,7 @@ BusyBear uses the SPTrans API to calculate the best stop point for the user to t
 
 ### Deployment
 
-This bot has currently an early test version deployed and running at `@busybearbot` Telegram username. 
-
-[![Deployed](https://img.shields.io/badge/Deployed-green?style=flat-square&logo=telegram)](https://t.me/busybearbot)
+This bot has currently an early test version deployed and running at `@busybearbot` Telegram username. You can test it by clicking the green flag above the first section.
 
 If you want to deploy your own instance of the bot, please follow the steps outlined in the [Getting Started](#getting-started) section. Once you have set up the environment variables with your own API keys, you can run the bot.
 
