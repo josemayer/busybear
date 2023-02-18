@@ -16,7 +16,7 @@ BusyBear uses the SPTrans API to calculate the best stop point for the user to t
 
 4. Run the bot: `python main.py`
 
-### Deployment
+## Deployment
 
 This bot has currently an early test version deployed and running at `@busybearbot` Telegram username. You can test it by clicking the green flag above the first section.
 
