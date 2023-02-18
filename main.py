@@ -5,6 +5,7 @@ import json
 import functions.utils
 import functions.geolocator
 import functions.buses
+import functions.messages
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import Updater, CommandHandler, MessageHandler, CallbackQueryHandler, Filters
 
@@ -37,7 +38,8 @@ def bus(update, context):
         menu = [[InlineKeyboardButton("Sentido Butantã", callback_data='butanta')],
                 [InlineKeyboardButton("Sentido Portaria 3", callback_data='p3')]]
         reply_markup = InlineKeyboardMarkup(menu)
-        update.message.reply_text(f"Aqui estão os pontos até 250m próximos de você: {str(candidate_points_names)}", reply_markup=reply_markup)
+        points_str = functions.messages.format_bullets(candidate_points_names)
+        update.message.reply_text(f"Aqui estão os pontos até 250m próximos de você:\n{points_str}", reply_markup=reply_markup)
     else:
         update.message.reply_text("Por favor, compartilhe sua localização comigo para obter os dados dos pontos de ônibus.")
 
